@@ -1,5 +1,7 @@
 package es.polarbear.PBOL;
 
+import java.text.MessageFormat;
+
 public class Parse {
 
     public static int pi(String s) {
@@ -29,5 +31,12 @@ public class Parse {
     }
     public static float pf(String s){
         return Float.parseFloat(s);
+    }
+
+    public static String psf(String x, Object ... args) {
+        return String.format(x,args);
+    }
+    public static String psmf(String x, Object ... args) {
+        return MessageFormat.format(x, args);
     }
 }
