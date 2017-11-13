@@ -18,7 +18,7 @@ public class PR {
             System.out.println(x);
         }
     }
-    public void printf(String x,Object ... args) {
+    public static void printf(String x,Object ... args) {
         System.out.printf(x,args);
     }
 }
