@@ -1,5 +1,7 @@
 package es.polarbear.PBOL;
 
+import java.text.MessageFormat;
+
 public class Print {
     public static void print() {
         System.out.println();
@@ -20,5 +22,8 @@ public class Print {
     }
     public static void printf(String x,Object ... args) {
         System.out.printf(x,args);
+    }
+    public static void printmf(String x,Object ... args) {
+        MessageFormat.format(x, args);
     }
 }
