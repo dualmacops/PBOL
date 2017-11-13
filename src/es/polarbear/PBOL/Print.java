@@ -18,4 +18,7 @@ public class Print {
             System.out.println(x);
         }
     }
+    public static void printf(String x,Object ... args) {
+        System.out.printf(x,args);
+    }
 }
