@@ -21,9 +21,9 @@ public class Print {
         }
     }
     public static void printf(String x,Object ... args) {
-        System.out.printf(x,args);
+        System.out.printf(x+System.lineSeparator(),args);
     }
     public static void printmf(String x,Object ... args) {
-        MessageFormat.format(x, args);
+        print(MessageFormat.format(x, args));
     }
 }
