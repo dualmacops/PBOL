@@ -1,6 +1,6 @@
 package es.polarbear.PBOL;
 
-public class PR {
+public class Print {
     public static void print() {
         System.out.println();
     }
