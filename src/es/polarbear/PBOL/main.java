@@ -13,4 +13,9 @@ public class main {
             System.out.println(it.nextIndex() + " " + it.next());
         }
     }
+    public static void indexEnumerator(String[] sv) {
+        for (int i = 0; i < sv.length; i++) {
+            System.out.println(i + " " + sv[i]);
+        }
+    }
 }
