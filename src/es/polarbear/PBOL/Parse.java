@@ -33,10 +33,11 @@ public class Parse {
         return Float.parseFloat(s);
     }
 
-    public static String psf(String x, Object ... args) {
+    public static String sf(String x, Object ... args) {
         return String.format(x,args);
     }
-    public static String psmf(String x, Object ... args) {
-        return MessageFormat.format(x, args);
+
+    public static String smf(String pattern, Object ... args) {
+        return MessageFormat.format(pattern, args);
     }
 }

@@ -28,13 +28,13 @@ public class Print {
     }
     @Test
     public void psfTest() throws Exception {
-        String out = psf("%f, %1$+020.10f", Math.PI);
+        String out = sf("%f, %1$+020.10f", Math.PI);
         String expectedOutput  = "3,141593, +00000003,1415926536";// Notice the \n for new line.
         assertEquals(expectedOutput, out);
     }
     @Test
     public void psmfTest() throws Exception {
-        String out = psmf("Hello its {0} {1}", 8,"PM");
+        String out = smf("Hello its {0} {1}", 8,"PM");
         String expectedOutput  = "Hello its 8 PM";// Notice the \n for new line.
         assertEquals(expectedOutput, out);
     }
