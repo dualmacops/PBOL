@@ -18,4 +18,7 @@ public class main {
             System.out.println(i + " " + sv[i]);
         }
     }
+    public static String lineSeparator(){
+        return System.lineSeparator();
+    }
 }
