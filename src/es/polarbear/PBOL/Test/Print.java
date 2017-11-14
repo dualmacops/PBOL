@@ -35,7 +35,7 @@ public class Print {
     @Test
     public void psmfTest() throws Exception {
         String out = psmf("Hello its {0} {1}", 8,"PM");
-        String expectedOutput  = "Hello its 8 PM"+lineSeparator();// Notice the \n for new line.
+        String expectedOutput  = "Hello its 8 PM";// Notice the \n for new line.
         assertEquals(expectedOutput, out);
     }
 }
