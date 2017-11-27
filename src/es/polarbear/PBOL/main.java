@@ -21,7 +21,7 @@ public class main {
     public static String lineSeparator(){
         return System.lineSeparator();
     }
-    static Object pop(ArrayList<Object> chairs) {
+    public static Object pop(ArrayList<Object> chairs) {
         Object x  = chairs.get(chairs.size()-1);
         chairs.remove(chairs.size()-1);
         return x;
