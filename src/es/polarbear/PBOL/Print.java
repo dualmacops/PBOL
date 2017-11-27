@@ -20,6 +20,14 @@ public class Print {
             System.out.println(x);
         }
     }
+    public static void print(Object ... args) {
+        for (int i = 0; i < args.length; i++) {
+            System.out.print(args[i]);
+            if(args.length-1!=i){
+                System.out.print(" ");
+            }
+        }
+    }
     public static void printf(String x,Object ... args) {
         System.out.printf(x+System.lineSeparator(),args);
     }
