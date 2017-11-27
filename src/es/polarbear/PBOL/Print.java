@@ -27,6 +27,7 @@ public class Print {
                 System.out.print(" ");
             }
         }
+        System.out.println();
     }
     public static void printf(String x,Object ... args) {
         System.out.printf(x+System.lineSeparator(),args);
