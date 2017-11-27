@@ -1,6 +1,8 @@
 package es.polarbear.PBOL;
 
 import java.text.MessageFormat;
+import java.util.ArrayList;
+import java.util.Arrays;
 
 public class Parse {
 
@@ -39,5 +41,9 @@ public class Parse {
 
     public static String smf(String pattern, Object ... args) {
         return MessageFormat.format(pattern, args);
+    }
+
+    public static ArrayList<String> array2ArList(String[] array) {
+        return new ArrayList<>(Arrays.asList(array));
     }
 }
