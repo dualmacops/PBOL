@@ -1,6 +1,7 @@
 package es.polarbear.PBOL;
 
 import java.text.MessageFormat;
+import java.util.ArrayList;
 
 public class Print {
     public static void print() {
@@ -18,6 +19,11 @@ public class Print {
     public static void print(String[] strings) {
         for (String x : strings) {
             System.out.println(x);
+        }
+    }
+    public static void print(ArrayList ar) {
+        for (Object anAr : ar) {
+            print(anAr);
         }
     }
     public static void print(Object ... args) {
